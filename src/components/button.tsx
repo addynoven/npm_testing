@@ -6,7 +6,11 @@ const button = ({
 	className: string;
 	children: string;
 }) => {
-	return <div className={className}>{children}</div>;
+	return (
+		<div className={`text-primary-400 bg-secondary-400 ${className}`}>
+			{children}
+		</div>
+	);
 };
 
 export default button;
